@@ -1,0 +1,31 @@
+# macOS
+.DS_Store
+.AppleDouble
+.LSOverride
+
+# Flutter & Dart (para cualquier subproyecto del curso)
+**/build/
+**/.dart_tool/
+**/.flutter-plugins
+**/.flutter-plugins-dependencies
+**/.pub-cache/
+**/.pub/
+**/coverage/
+**/doc/api/
+**/.widget_preview/
+**/ios/Flutter/.last_build_id
+
+# Android builds
+**/android/app/debug
+**/android/app/profile
+**/android/app/release
+
+# IDEs
+.idea/
+*.iml
+*.iws
+*.ipr
+
+# Logs y temporales
+*.log
+*.class
