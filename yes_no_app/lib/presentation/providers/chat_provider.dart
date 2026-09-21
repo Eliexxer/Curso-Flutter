@@ -10,16 +10,16 @@ class ChatProvider extends ChangeNotifier {
     Message(
       text: 'Como estas?',
       fromWho: FromWho.her,
-      imageUrl: 'https://media3.giphy.com/media/v1.Y2lkPWFmMzk1ZjIwcnk2NXR2MzcweDRrMG5vZmp2OGdoeXc0amgzeHFkZ2Y1YTVkcjZzdSZlcD12MV9naWZzX3JhbmRvbSZjdD1n/6gc9F8lIXW8CF74iUH/giphy.gif',
+      imageUrl: 'https://yesno.wtf/assets/yes/2.gif',
     ),
   ];
 
   Future<void> sendMessage(String text) async {
-    if (text.trim().isEmpty) return;
+    if (text.isEmpty) return;
 
     final newMessage = Message(text: text, fromWho: FromWho.me);
     messages.add(newMessage);
-    if (text.trim().endsWith('?')) {
+    if (text.endsWith('?')) {
       getHerMessage();
     }
     notifyListeners();
@@ -35,7 +35,6 @@ class ChatProvider extends ChangeNotifier {
 
   Future<void> scrollToBottom() async {
     await Future.delayed(const Duration(milliseconds: 100));
-    if (!scrollController.hasClients) return;
     scrollController.animateTo(
       scrollController.position.maxScrollExtent,
       duration: const Duration(milliseconds: 300),

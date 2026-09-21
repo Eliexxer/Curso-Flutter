@@ -1,11 +1,38 @@
-# macOS
+# ===================================================================
+# Sistema Operativo y Archivos Temporales
+# ===================================================================
 .DS_Store
 .AppleDouble
 .LSOverride
+._*
+Desktop.ini
+Thumbs.db
 
-# Flutter & Dart (para cualquier subproyecto del curso)
-**/build/
+# ===================================================================
+# Entornos, Secretos y Llaves Privadas
+# ===================================================================
+*.env
+*.env.*
+*.env.local
+*.env.development.local
+*.env.test.local
+*.env.production.local
+**/.env
+**/.env.*
+*.key
+*.keystore
+*.jks
+*.p12
+*.pem
+*.pfx
+**/google-services.json
+**/GoogleService-Info.plist
+
+# ===================================================================
+# Flutter & Dart (Aplica a subproyectos en cualquier nivel)
+# ===================================================================
 **/.dart_tool/
+**/build/
 **/.flutter-plugins
 **/.flutter-plugins-dependencies
 **/.pub-cache/
@@ -13,19 +40,55 @@
 **/coverage/
 **/doc/api/
 **/.widget_preview/
+
+# ===================================================================
+# Android
+# ===================================================================
+**/android/.gradle/
+**/android/local.properties
+**/android/app/debug/
+**/android/app/profile/
+**/android/app/release/
+**/android/.cxx/
+**/android/captures/
+
+# ===================================================================
+# iOS / macOS
+# ===================================================================
 **/ios/Flutter/.last_build_id
+**/ios/Flutter/Generated.xcconfig
+**/ios/Flutter/flutter_export_environment.sh
+**/ios/Flutter/ephemeral/
+**/ios/Pods/
+**/.symlinks/
+**/macos/Flutter/ephemeral/
+**/macos/Pods/
 
-# Android builds
-**/android/app/debug
-**/android/app/profile
-**/android/app/release
-
-# IDEs
+# ===================================================================
+# IDEs & Editores (VS Code, Android Studio, IntelliJ)
+# ===================================================================
 .idea/
+**/.idea/
 *.iml
+**/*.iml
 *.iws
 *.ipr
+.vscode/*
+!.vscode/settings.json
+!.vscode/tasks.json
+!.vscode/launch.json
+!.vscode/extensions.json
+**/.vscode/*
+!**/.vscode/settings.json
+!**/.vscode/tasks.json
+!**/.vscode/launch.json
+!**/.vscode/extensions.json
 
-# Logs y temporales
+# ===================================================================
+# Logs y Archivos de Compilación / Crash
+# ===================================================================
 *.log
 *.class
+*.pyc
+*.swp
+*~
