@@ -63,4 +63,11 @@ const appMenuItems = <MenuItems>[
     link: '/infinite_scroll',
     icon: Icons.list_alt_outlined,
   ),
+
+  MenuItems(
+    title: 'UI Controls',
+    subtitle: 'UI Controls',
+    link: '/ui_controls',
+    icon: Icons.list_alt_outlined,
+  ),
 ];
