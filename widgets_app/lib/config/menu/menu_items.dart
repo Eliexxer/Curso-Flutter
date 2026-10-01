@@ -44,6 +44,20 @@ const appMenuItems = <MenuItems>[
   ),
 
   MenuItems(
+    title: 'Animated Container',
+    subtitle: 'Animated Container',
+    link: '/animated_screen',
+    icon: Icons.crop_square_sharp,
+  ),
+
+  MenuItems(
+    title: 'Snackbar y Diálogos',
+    subtitle: 'Snackbar y Diálogos',
+    link: '/snackbar',
+    icon: Icons.crop_square_sharp,
+  ),
+
+  MenuItems(
     title: 'Infinite Scroll',
     subtitle: 'Infinite Scroll',
     link: '/infinite_scroll',
